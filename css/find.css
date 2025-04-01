@@ -1,0 +1,114 @@
+@import "./global.css";
+
+
+/* 검색바 폼 위치 조정: 위 간격 50px, 가운데 정렬 */
+.find-search-bar-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 검색바를 감싸는 div */
+.find-search-bar-form > div {
+    width: 100%;
+    max-width: 1200px; /* 너무 길어지지 않도록 제한 */
+    position: relative;
+}
+
+/* 검색 입력창 스타일 */
+.find-search-bar {
+    width: 100%;
+    padding: 10px 40px 10px 15px; /* 오른쪽 공간은 아이콘 위치용 */
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    background-color: var(--darkpurple);
+    box-sizing: border-box;
+}
+
+/* 검색창 내부 아이콘 전용 */
+.find-search-bar-form .material-icons-outlined {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* 포커스 시 스타일 */
+.find-search-bar:focus {
+    background-color: #594374;
+    /* border: 2px solid #ffffff; */
+}
+
+/* 검색 아이콘 위치 조정 */
+.material-icons-outlined {
+    /* position: absolute;
+    font: 1rem;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%); */
+    color: white;
+    cursor: pointer;
+} 
+
+.best-moive__img-container {
+    padding: 0 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 이 래퍼가 기준이 됨 */
+.best-moive__img-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.best-moive__img {
+    width: 22rem;
+    height: 12rem;
+    border-radius: 25px;
+    display: block;
+}
+
+/* 재생 아이콘 이미지 안 오른쪽 하단 */
+.play-icon {
+    position: absolute;
+    bottom: -45px;
+    right: -25px;
+    font-size: 5rem;
+    color: white;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* 전체를 감싸는 컨테이너의 간격 조정 */
+.movie-recommendation {
+    margin: 25px 0;
+    padding: 0 25px;
+}
+
+.movie-recommendation__imgs {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    overflow: scroll;
+}
+
+.movie-recommendation__imgs li {
+    margin-left:5px;
+}
+
+.movie-recommendation__imgs img {
+    width: 150px;
+    border-radius: 20px;
+}
+
